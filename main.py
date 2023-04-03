@@ -18,13 +18,23 @@ def play_game():
         answer = subtract_numbers(num1, num2)
         guess = input(f"What is {num1} - {num2}? ")
         if guess.lower() == "q":
+            print()
             print("Thank you for playing.")
             sys.exit()
-        try:
-            guess = int(guess)
-        except ValueError:
-            print("Invalid input. Please enter a number.")
-            continue
+        while True:
+            try:
+                guess = int(guess)
+            except ValueError:
+                print("Invalid input. Please enter a number.")
+                print()
+                guess = input(f"What is {num1} - {num2}? ")
+                if guess.lower() == "q":
+                    print()
+                    print("Thank you for playing.")
+                    sys.exit()
+                continue
+            else:
+                break
         if int(guess) == answer:
             correct_guesses += 1
             rounds += 1
