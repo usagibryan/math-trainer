@@ -4,4 +4,4 @@ I created this short Python program because I was unable to find a simple free a
 
 I added basic input validation, a loop that keeps giving you questions, a score tracker, and an option to quit at any time. I also added a function that swaps the numbers when num1 is smaller than num2, to prevent cases where the answer would be negative. I am thinking of adding options to include random binary math problems at a later time.
 
-<img src="./img/demo.png">
+<img src="./img/demo.png" width="50%">
