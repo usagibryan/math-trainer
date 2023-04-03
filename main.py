@@ -53,6 +53,7 @@ def play_game():
         else:
             rounds += 1
             print(f"Incorrect. The answer is {answer}.")
+            print(f"Score: {correct_guesses} out of {rounds}")
         print()
 
 play_game()
