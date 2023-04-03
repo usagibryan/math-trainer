@@ -1,1 +1,1 @@
-# math-trainer
+# Math Trainer
